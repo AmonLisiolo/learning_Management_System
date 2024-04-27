@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your CSS file -->
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <nav>
+            <form id="logout-form">
+                <button type="submit">Logout</button>
+            </form>
+            <ul>
+                <li><a href="leader_bord.html">Leaderboard</a></li>
+                <li><a href="course_content.html">Course Content</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-message">
+            <h2>Hello, <span id="user-fullname"></span>!</h2>
+            <p>Welcome to your personalized dashboard.</p>
+        </section>
+        <section class="Register Course">
+            <h2>Course Registration</h2>
+            <fieldset>
+                <label for="Select Course To Register">Select Course To Register</label><br>
+                <input type="checkbox" id="WEB Technologies" name="WEB Technologies" value="WEB Technologies">
+                <a style="display: right;" href="webtech.html" target="_blank">View</a>
+                <lable for="WEB Technologies">WEB Technologies</lable><br>
+                <input type="checkbox" id="Computer Science" name="Computer Science" value="Computer Science">
+                <a style="display: right;" href="computer_science.html" target="_blank">View</a>
+                <lable for="Computer Science">Computer Science</lable><br>
+                <input type="checkbox" id="Cyber Security" name="Cyber Security" value="Cyber Security">
+                <a style="display: right;" href="cyber_security.html" target="_blank">View</a>
+                <lable for="Cyber Security">Cyber Security</lable><br>
+                <input type="checkbox" id="Data Analysis" name="Data Analysis" value="Data Analysis">
+                <a style="display: right;" href="data_analysis.html" target="_blank">View</a>
+                <lable for="Data Analysis">Data Analysis</lable><br>
+            </fieldset>
+            <button type="Register">Register Course</button>
+            
+        </section>
+        <section>
+            <h2>My Course Progress</h2>
+            <a href="course_content.html">Registered Courses</a>
+
+        </section>
+        <section>
+            <h2>My Timetable</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:30 AM - 11:30 AM</td>
+                        <td><a href="webtech.html">WEB Tech</a></td>
+                        <td><a href="data_analysis.html">Data Analysis</a></td>
+                        <td><a href="cyberSecurity.html">Cyber Security</a></td>
+                        <td><a href="data_analysis.html">Data Analysis</a></td>
+                        <td><a href="computer_science.html">Computer Science</a></td>
+                    </tr>
+                    <tr>
+                        <td>02:00 PM - 04:00 PM</td>
+                        <td><a href="cyber_security.html">Cyber Security</a></td>
+                        <td>Mentorship Class</td>
+                        <td><a href="computer_science.html">Computer Science</a></td>
+                        <td><a href="webtech.html">WEB Tech</a></td>
+                        <td>Break</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <p>Welcome to your personalized dashboard.</p>
+    </main>
+    <footer>
+        <p style="font-size: 20; color:rgb(2, 51, 2)">&copy; 2024 Your LMS</p>
+    </footer>
+
+    <!-- Include your client-side JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
