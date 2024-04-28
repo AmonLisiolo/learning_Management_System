@@ -156,7 +156,7 @@ app.get('/course/:id', (req, res) => {
       if (err) {
         throw err;
       }
-      // Send course content as JSON response
+      // Send course content as JSON response?
       res.json(result);
     });
   });

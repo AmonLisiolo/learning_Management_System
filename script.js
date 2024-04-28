@@ -191,7 +191,7 @@ function fetchFullName() {
             return response.json();
         })
         .then(data => {
-            // Display the user's full name on the dashboard
+            // Display the user's full name on the dashboard?
             displayFullName(data.fullName);
         })
         .catch(error => {
