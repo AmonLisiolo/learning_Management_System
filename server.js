@@ -148,7 +148,7 @@ app.get('/dashboard.html', (req, res) => {
     res.render('dashboard.html', { fullName: userFullName });
 });
 
-// Route to retrieve course content
+// Route to retrieve course contents
 app.get('/course/:id', (req, res) => {
     const courseId = req.params.id;
     const sql = 'SELECT * FROM courses WHERE id = ?';
